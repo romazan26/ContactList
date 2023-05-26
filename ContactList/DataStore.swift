@@ -8,10 +8,11 @@
 import Foundation
 
 class DataStore {
-    static let shred = DataStore()
+    static let shared = DataStore()
+    private init() { }
     
-    let name: [String] = []
-    let serName: [String] = []
-    let email: [String] = []
-    let talNumber: [String] = []
+    let names: [String] = ["Roman", "Maria"]
+    let serNames: [String] = ["Glavackii", "Klyshko"]
+    let emails: [String] = ["romazan.26@gmail.com"]
+    let talNumbers: [String] = ["89682674413"]
 }

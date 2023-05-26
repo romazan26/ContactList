@@ -14,6 +14,7 @@
 		308487F62A2135EE0076587B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308487F42A2135EE0076587B /* LaunchScreen.storyboard */; };
 		308487FE2A2138480076587B /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308487FD2A2138480076587B /* ContactListViewController.swift */; };
 		308488002A213D0A0076587B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308487FF2A213D0A0076587B /* DataStore.swift */; };
+		308488022A2142520076587B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308488012A2142520076587B /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		308487F72A2135EE0076587B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		308487FD2A2138480076587B /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		308487FF2A213D0A0076587B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		308488012A2142520076587B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				308487F42A2135EE0076587B /* LaunchScreen.storyboard */,
 				308487F72A2135EE0076587B /* Info.plist */,
 				308487FF2A213D0A0076587B /* DataStore.swift */,
+				308488012A2142520076587B /* Person.swift */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308488022A2142520076587B /* Person.swift in Sources */,
 				308488002A213D0A0076587B /* DataStore.swift in Sources */,
 				308487EA2A2135ED0076587B /* AppDelegate.swift in Sources */,
 				308487EC2A2135ED0076587B /* SceneDelegate.swift in Sources */,

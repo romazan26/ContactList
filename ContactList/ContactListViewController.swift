@@ -9,13 +9,14 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
 
+    private var contactList = Person.GetContactList()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.rowHeight = 80
+        print(contactList)
     }
-
-   
-
    
     
     // MARK: - Navigation
@@ -31,16 +32,20 @@ final class ContactListViewController: UITableViewController {
 extension ContactListViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
-        return 0
+        contactList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
-
+        let persons = contactList[indexPath.row]
        
+        var content = cell.defaultContentConfiguration()
+       
+        content.text = persons.serNames[indexPath.row]
 
+        cell.contentConfiguration = content
         return cell
     }
 }
