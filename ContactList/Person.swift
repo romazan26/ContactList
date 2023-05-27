@@ -7,14 +7,41 @@
 
 struct Person {
     
-    let names = DataStore.shared.names
-    let serNames = DataStore.shared.serNames
-    let telNumbers = DataStore.shared.talNumbers
-    let emails = DataStore.shared.emails
+    var telNumbers = ""
+    var emails = ""
+    var names = ""
+    var serNames = ""
     
-    static func GetContactList() -> [Person] {
-        [
-            Person.init()
-        ]
+    static func geting() -> [Person] {
+             [
+                Person(telNumbers: DataStore.shared.talNumbers.randomElement() ?? "",
+                       emails: DataStore.shared.emails.randomElement() ?? "",
+                       names: DataStore.shared.names.randomElement() ?? "",
+                       serNames: DataStore.shared.serNames.randomElement() ?? "" ),
+                Person(telNumbers: DataStore.shared.talNumbers.randomElement() ?? "",
+                       emails: DataStore.shared.emails.randomElement() ?? "",
+                       names: DataStore.shared.names.randomElement() ?? "",
+                       serNames: DataStore.shared.serNames.randomElement() ?? ""),
+                Person(telNumbers: DataStore.shared.talNumbers.randomElement() ?? "",
+                       emails: DataStore.shared.emails.randomElement() ?? "",
+                       names: DataStore.shared.names.randomElement() ?? "",
+                       serNames: DataStore.shared.serNames.randomElement() ?? "" ),
+                Person(telNumbers: DataStore.shared.talNumbers.randomElement() ?? "",
+                       emails: DataStore.shared.emails.randomElement() ?? "",
+                       names: DataStore.shared.names.randomElement() ?? "",
+                       serNames: DataStore.shared.serNames.randomElement() ?? ""),
+                Person(telNumbers: DataStore.shared.talNumbers.randomElement() ?? "",
+                       emails: DataStore.shared.emails.randomElement() ?? "",
+                       names: DataStore.shared.names.randomElement() ?? "",
+                       serNames: DataStore.shared.serNames.randomElement() ?? "" ),
+                Person(telNumbers: DataStore.shared.talNumbers.randomElement() ?? "",
+                       emails: DataStore.shared.emails.randomElement() ?? "",
+                       names: DataStore.shared.names.randomElement() ?? "",
+                       serNames: DataStore.shared.serNames.randomElement() ?? "")
+            ]
+            
+        
     }
 }
+
+
