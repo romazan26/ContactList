@@ -16,6 +16,7 @@
 		308488002A213D0A0076587B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308487FF2A213D0A0076587B /* DataStore.swift */; };
 		308488022A2142520076587B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308488012A2142520076587B /* Person.swift */; };
 		308488042A229F410076587B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308488032A229F410076587B /* InfoViewController.swift */; };
+		308488062A22A83A0076587B /* infoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308488052A22A83A0076587B /* infoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		308487FF2A213D0A0076587B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		308488012A2142520076587B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		308488032A229F410076587B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		308488052A22A83A0076587B /* infoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		308487DD2A2135ED0076587B = {
 			isa = PBXGroup;
 			children = (
+				308488052A22A83A0076587B /* infoTableViewController.swift */,
 				308487E82A2135ED0076587B /* ContactList */,
 				308487E72A2135ED0076587B /* Products */,
 			);
@@ -150,6 +153,7 @@
 				308488022A2142520076587B /* Person.swift in Sources */,
 				308488002A213D0A0076587B /* DataStore.swift in Sources */,
 				308487EA2A2135ED0076587B /* AppDelegate.swift in Sources */,
+				308488062A22A83A0076587B /* infoTableViewController.swift in Sources */,
 				308487EC2A2135ED0076587B /* SceneDelegate.swift in Sources */,
 				308488042A229F410076587B /* InfoViewController.swift in Sources */,
 				308487FE2A2138480076587B /* ContactListViewController.swift in Sources */,
