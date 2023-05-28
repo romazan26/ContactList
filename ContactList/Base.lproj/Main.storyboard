@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="b3D-T6-rjF" id="ERA-1B-Q13"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="rzJ-I7-wrM"/>
+                    <tabBarItem key="tabBarItem" title="Person" selectedImage="person.crop.circle" catalog="system" id="rzJ-I7-wrM"/>
                     <navigationItem key="navigationItem" title="Contact List" id="r2m-Y6-lEL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rx6-mA-W7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -135,7 +135,7 @@
             </objects>
             <point key="canvasLocation" x="2405.3435114503814" y="19.718309859154932"/>
         </scene>
-        <!--Item-->
+        <!--Person-->
         <scene sceneID="owG-ti-4Rg">
             <objects>
                 <tableViewController id="nUv-QD-Tnm" customClass="infoTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lWN-5t-Czt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="peron" id="lWN-5t-Czt">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lWN-5t-Czt" id="BQM-I5-zNE">
@@ -158,7 +158,7 @@
                             <outlet property="delegate" destination="nUv-QD-Tnm" id="Ehe-E2-4Cq"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="zB4-ue-zJ7"/>
+                    <tabBarItem key="tabBarItem" title="Person" selectedImage="person.and.person" catalog="system" id="zB4-ue-zJ7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5W-sV-Qga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,12 +180,12 @@
             </objects>
             <point key="canvasLocation" x="-269" y="21"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Person List-->
         <scene sceneID="0hN-sh-vu2">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="H4O-aT-o1U" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Kna-Ka-QC7"/>
+                    <navigationItem key="navigationItem" title="Person List" largeTitleDisplayMode="always" id="Kna-Ka-QC7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OdS-4t-48Q">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -201,6 +201,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.and.person" catalog="system" width="128" height="82"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -11,9 +11,9 @@ final class ContactListViewController: UITableViewController {
 
     private var contactList = Person.geting()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.rowHeight = 80
         
     }
@@ -26,6 +26,19 @@ final class ContactListViewController: UITableViewController {
         guard let index = tableView.indexPathForSelectedRow else { return }
         guard let infoVC = segue.destination as? InfoViewController else { return }
         infoVC.person = contactList[index.row]
+        
+        guard let tabBarController = segue.destination as? TabBarViewController else {
+            return
+        }
+     // tabBarController.user = contactList
+//        guard let tabBarController = segue.destination as? UITabBarController else {return}
+//        guard let viewControllers = tabBarController.viewControllers else {return}
+//        for viewController in viewControllers {
+//            if let infoVC = viewController as? infoTableViewController
+//            {
+//                infoVC.person = contactList[]
+//            }
+//        }
     }
 
 }
