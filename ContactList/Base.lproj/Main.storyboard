@@ -187,6 +187,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Person List" largeTitleDisplayMode="always" id="Kna-Ka-QC7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OdS-4t-48Q">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

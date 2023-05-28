@@ -30,7 +30,7 @@ final class ContactListViewController: UITableViewController {
         guard let tabBarController = segue.destination as? TabBarViewController else {
             return
         }
-     // tabBarController.user = contactList
+      tabBarController.user = contactList
 //        guard let tabBarController = segue.destination as? UITabBarController else {return}
 //        guard let viewControllers = tabBarController.viewControllers else {return}
 //        for viewController in viewControllers {

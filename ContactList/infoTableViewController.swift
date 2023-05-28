@@ -7,11 +7,13 @@
 
 import UIKit
 
-class infoTableViewController: UITableViewController {
+final class infoTableViewController: UITableViewController {
 
     var person = Person.geting()
+    var pr: [Person]!
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(pr)
        
         
 

@@ -7,16 +7,16 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+final class TabBarViewController: UITabBarController {
     
-    var user: Person!
+    var user: [Person]!
     
     private func transferData() {
             guard let viewControllers else { return }
-            
+        
             viewControllers.forEach {
                 if let infoTableVC = $0 as? infoTableViewController {
-                  // infoTableVC.person = user
+                  infoTableVC.pr = user
                 }
             }
         }
