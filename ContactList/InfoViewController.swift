@@ -9,11 +9,10 @@ import UIKit
 
 final class InfoViewController: UIViewController {
 
-    var person: Person!
-    
     @IBOutlet var telNumberLabel: UILabel!
-    @IBOutlet var fullName: UILabel!
     @IBOutlet var emailLabel: UILabel!
+    
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,7 @@ final class InfoViewController: UIViewController {
     private func setInfoLabel() {
         telNumberLabel.text = person.telNumbers
         emailLabel.text = person.emails
-        fullName.text = "\(person.serNames) \(person.names)"
+        title = person.fullName
     }
     
 }

@@ -9,15 +9,19 @@ import UIKit
 
 final class TabBarViewController: UITabBarController {
     
-    var user: [Person]!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViewController()
+    }
     
-    private func transferData() {
-            guard let viewControllers else { return }
+    private func setupViewController() {
         
-            viewControllers.forEach {
-                if let infoTableVC = $0 as? infoTableViewController {
-                  infoTableVC.pr = user
-                }
-            }
-        }
+        var user = Person.geting()
+        
+        guard let contactVC = viewControllers?.first as? ContactListViewController else {return}
+        guard let infoVC = viewControllers?.last as? infoTableViewController else {return}
+        
+        contactVC.contactList = user
+        infoVC.pr = user
+    }
 }

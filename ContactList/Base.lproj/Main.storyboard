@@ -50,12 +50,12 @@
                             <outlet property="delegate" destination="b3D-T6-rjF" id="ERA-1B-Q13"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Person" selectedImage="person.crop.circle" catalog="system" id="rzJ-I7-wrM"/>
+                    <tabBarItem key="tabBarItem" title="Person" image="person.fill" catalog="system" selectedImage="person.fill" id="rzJ-I7-wrM"/>
                     <navigationItem key="navigationItem" title="Contact List" id="r2m-Y6-lEL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rx6-mA-W7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562.5954198473282" y="20.422535211267608"/>
+            <point key="canvasLocation" x="1567" y="449"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="a62-DJ-pKG">
@@ -65,14 +65,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-qe-Ld2">
-                                <rect key="frame" x="20" y="171" width="80" height="40.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="4uF-PE-C3C">
-                                <rect key="frame" x="20" y="271.66666666666669" width="353" height="64.666666666666686"/>
+                                <rect key="frame" x="20" y="254.99999999999997" width="353" height="64.666666666666657"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="WxJ-MP-XsZ">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="64.666666666666671"/>
@@ -118,22 +112,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="daE-S2-slz" firstAttribute="trailing" secondItem="4uF-PE-C3C" secondAttribute="trailing" constant="20" id="770-91-XFg"/>
-                            <constraint firstItem="K6I-qe-Ld2" firstAttribute="leading" secondItem="daE-S2-slz" secondAttribute="leading" constant="20" id="S9m-AU-zv2"/>
                             <constraint firstItem="4uF-PE-C3C" firstAttribute="leading" secondItem="daE-S2-slz" secondAttribute="leading" constant="20" id="WOO-g3-sie"/>
-                            <constraint firstItem="K6I-qe-Ld2" firstAttribute="top" secondItem="daE-S2-slz" secondAttribute="top" constant="16" id="pP2-X8-6Dc"/>
-                            <constraint firstItem="4uF-PE-C3C" firstAttribute="top" secondItem="K6I-qe-Ld2" secondAttribute="bottom" constant="60" id="uIp-vo-Dbc"/>
+                            <constraint firstItem="4uF-PE-C3C" firstAttribute="top" secondItem="daE-S2-slz" secondAttribute="top" constant="100" id="ZCV-EE-b9y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yjP-62-ksc"/>
                     <connections>
                         <outlet property="emailLabel" destination="15e-xt-wy9" id="173-QX-cQn"/>
-                        <outlet property="fullName" destination="K6I-qe-Ld2" id="iX4-Za-GAi"/>
                         <outlet property="telNumberLabel" destination="9Y1-ag-9of" id="gfc-2E-UUx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IG-1k-8Qr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2405.3435114503814" y="19.718309859154932"/>
+            <point key="canvasLocation" x="2550" y="449"/>
         </scene>
         <!--Person-->
         <scene sceneID="owG-ti-4Rg">
@@ -158,11 +149,11 @@
                             <outlet property="delegate" destination="nUv-QD-Tnm" id="Ehe-E2-4Cq"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Person" selectedImage="person.and.person" catalog="system" id="zB4-ue-zJ7"/>
+                    <tabBarItem key="tabBarItem" title="Person" image="person" catalog="system" id="zB4-ue-zJ7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5W-sV-Qga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1563" y="769"/>
+            <point key="canvasLocation" x="1567" y="-281"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZiO-45-Rjw">
@@ -183,7 +174,7 @@
         <!--Person List-->
         <scene sceneID="0hN-sh-vu2">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="H4O-aT-o1U" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="H4O-aT-o1U" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Person List" largeTitleDisplayMode="always" id="Kna-Ka-QC7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OdS-4t-48Q">
@@ -202,8 +193,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.and.person" catalog="system" width="128" height="82"/>
-        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

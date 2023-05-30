@@ -9,7 +9,6 @@ import Foundation
 
 class DataStore {
     static let shared = DataStore()
-    private init() { }
     
     let names: [String] = ["Roman", "Ryslan", "Anatolii", "Igor", "Fedor", "Alexsandr"]
     let serNames: [String] = ["Glavackii", "Klyshko", "Petrov", "Ivanov", "Sidorov", "Kyzmin"]
@@ -27,4 +26,6 @@ class DataStore {
         "89874558741",
         "89874447714",
         "89689852254"]
+    
+    private init() {}
 }
